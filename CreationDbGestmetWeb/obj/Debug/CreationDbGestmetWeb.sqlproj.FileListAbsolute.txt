@@ -1,0 +1,6 @@
+C:\Users\phili\Documents\PROJET INDIVIDUEL\VisualStudio\CreationDbGestmetWeb\bin\Debug\CreationDbGestmetWeb.dacpac
+C:\Users\phili\Documents\PROJET INDIVIDUEL\VisualStudio\CreationDbGestmetWeb\bin\Debug\CreationDbGestmetWeb.dll
+C:\Users\phili\Documents\PROJET INDIVIDUEL\VisualStudio\CreationDbGestmetWeb\bin\Debug\CreationDbGestmetWeb.pdb
+C:\Users\phili\Documents\PROJET INDIVIDUEL\VisualStudio\CreationDbGestmetWeb\obj\Debug\CreationDbGestmetWeb.sqlprojAssemblyReference.cache
+C:\Users\phili\Documents\PROJET INDIVIDUEL\VisualStudio\CreationDbGestmetWeb\obj\Debug\CreationDbGestmetWeb.dll
+C:\Users\phili\Documents\PROJET INDIVIDUEL\VisualStudio\CreationDbGestmetWeb\obj\Debug\CreationDbGestmetWeb.pdb

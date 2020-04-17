@@ -1,0 +1,59 @@
+﻿** Met en surbrillance
+     Tables à reconstruire
+       Aucun
+     Index ordonnés en clusters à supprimer
+       Aucun
+     Index ordonnés en clusters à créer.
+       Aucun
+     Problèmes de données possibles
+       Aucun
+
+** Actions de l'utilisateur
+     Créer
+       [dbo].[Chantier] (Table)
+       [dbo].[Contrat] (Table)
+       [dbo].[JournalDesTravaux] (Table)
+       [dbo].[Personnel] (Table)
+       [dbo].[Personnel_Contrat] (Table)
+       [dbo].[Poste] (Table)
+       [dbo].[Societe] (Table)
+       [dbo].[Transaction] (Table)
+       [dbo].[Transaction_Acces] (Table)
+       [dbo].[Utilisateur] (Table)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[Chantier] (Contrainte par défaut)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[Chantier] (Contrainte par défaut)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[JournalDesTravaux] (Contrainte par défaut)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[JournalDesTravaux] (Contrainte par défaut)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[JournalDesTravaux] (Contrainte par défaut)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[Personnel] (Contrainte par défaut)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[Personnel_Contrat] (Contrainte par défaut)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[Poste] (Contrainte par défaut)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[Utilisateur] (Contrainte par défaut)
+       [dbo].[FK_ChantierSocId] (Clé étrangère)
+       [dbo].[FK_JDTPersonnelId] (Clé étrangère)
+       [dbo].[FK_PosteId] (Clé étrangère)
+       [dbo].[FK_Login] (Clé étrangère)
+       [dbo].[FK_PersonnelSocId] (Clé étrangère)
+       [dbo].[FK_ContPersonnelId] (Clé étrangère)
+       [dbo].[FK_ContratId] (Clé étrangère)
+       [dbo].[FK_PosteChantierId] (Clé étrangère)
+       [dbo].[FK_UtilisateurId] (Clé étrangère)
+       [dbo].[FK_TransactionId] (Clé étrangère)
+       [dbo].[FK_UtilisateurPersId] (Clé étrangère)
+       [dbo].[V_ChantierActif] (Vue)
+       [dbo].[V_PersonnelActif] (Vue)
+       [dbo].[V_PosteActif] (Vue)
+       [dbo].[SF_HashPassword] (Fonction)
+       [dbo].[SP_AddJDT] (Procédure)
+       [dbo].[SP_AddPersCont] (Procédure)
+       [dbo].[SP_AddPersonnel] (Procédure)
+       [dbo].[SP_AddTransactionAcces] (Procédure)
+       [dbo].[SP_AddUtilisateur] (Procédure)
+       [dbo].[SP_ConnectUtilisateur] (Procédure)
+       [dbo].[SP_DeleteJDT] (Procédure)
+       [dbo].[SP_DeleteTransactionAcces] (Procédure)
+       [dbo].[SP_DeleteUtilisateur] (Procédure)
+       [dbo].[SP_UpdateJDT] (Procédure)
+       [dbo].[SP_UpdateUtilisateur] (Procédure)
+
+** Actions de support

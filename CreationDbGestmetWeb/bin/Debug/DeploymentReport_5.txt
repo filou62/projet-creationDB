@@ -1,0 +1,69 @@
+﻿** Met en surbrillance
+     Tables à reconstruire
+       Aucun
+     Index ordonnés en clusters à supprimer
+       Aucun
+     Index ordonnés en clusters à créer.
+       Aucun
+     Problèmes de données possibles
+       La colonne [dbo].[Chantier].[SocieteId] de la table [dbo].[Chantier] doit être ajoutée mais la colonne ne comporte pas
+         de valeur par défaut et n'autorise pas les valeurs NULL. Si la table contient des données, le script ALTER ne
+         fonctionnera pas. Pour éviter ce problème, vous devez ajouter une valeur par défaut à la colonne, la marquer comme
+         autorisant les valeurs Null ou activer la génération de smart-defaults en tant qu'option de déploiement.
+       La colonne [dbo].[Personnel].[SocieteId] de la table [dbo].[Personnel] doit être ajoutée mais la colonne ne comporte pas
+         de valeur par défaut et n'autorise pas les valeurs NULL. Si la table contient des données, le script ALTER ne
+         fonctionnera pas. Pour éviter ce problème, vous devez ajouter une valeur par défaut à la colonne, la marquer comme
+         autorisant les valeurs Null ou activer la génération de smart-defaults en tant qu'option de déploiement.
+       La colonne [dbo].[Poste].[ChantierId] de la table [dbo].[Poste] doit être ajoutée mais la colonne ne comporte pas de
+         valeur par défaut et n'autorise pas les valeurs NULL. Si la table contient des données, le script ALTER ne fonctionnera
+         pas. Pour éviter ce problème, vous devez ajouter une valeur par défaut à la colonne, la marquer comme autorisant les
+         valeurs Null ou activer la génération de smart-defaults en tant qu'option de déploiement.
+       La colonne [dbo].[Utilisateur].[PersonnelId] de la table [dbo].[Utilisateur] doit être ajoutée mais la colonne ne
+         comporte pas de valeur par défaut et n'autorise pas les valeurs NULL. Si la table contient des données, le script ALTER
+         ne fonctionnera pas. Pour éviter ce problème, vous devez ajouter une valeur par défaut à la colonne, la marquer comme
+         autorisant les valeurs Null ou activer la génération de smart-defaults en tant qu'option de déploiement.
+
+** Actions de l'utilisateur
+     Renommer
+       [dbo].[JournalDesTravaux].[ChefChantierId] (Colonne)
+     Supprimer
+       [dbo].[FK_PosteId] (Clé étrangère)
+     Modifier
+       [dbo].[Chantier] (Table)
+       [dbo].[JournalDesTravaux] (Table)
+       [dbo].[Personnel] (Table)
+       [dbo].[Poste] (Table)
+       [dbo].[Utilisateur] (Table)
+       [dbo].[V_PersonnelActif] (Vue)
+     Créer
+       [dbo].[UK_PosteChant] (Contrainte unique)
+       Contrainte unique: contrainte sans nom sur [dbo].[Utilisateur] (Contrainte unique)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[JournalDesTravaux] (Contrainte par défaut)
+       [dbo].[FK_PosteId] (Clé étrangère)
+       [dbo].[FK_ChantierSocId] (Clé étrangère)
+       [dbo].[FK_PersonnelSocId] (Clé étrangère)
+       [dbo].[FK_PosteChantierId] (Clé étrangère)
+       [dbo].[FK_UtilisateurPersId] (Clé étrangère)
+       [dbo].[V_ChantierActif] (Vue)
+       [dbo].[V_PosteActif] (Vue)
+       [dbo].[SP_AddJDT] (Procédure)
+       [dbo].[SP_AddTransactionAcces] (Procédure)
+       [dbo].[SP_DeleteJDT] (Procédure)
+       [dbo].[SP_DeleteTransactionAcces] (Procédure)
+       [dbo].[SP_UpdateJDT] (Procédure)
+       [dbo].[SP_UpdateUtilisateur] (Procédure)
+
+** Actions de support
+     Actualiser
+       [dbo].[SP_AddPersonnel] (Procédure)
+       [dbo].[SP_AddUtilisateur] (Procédure)
+       [dbo].[SP_DeleteUtilisateur] (Procédure)
+
+La colonne [dbo].[Chantier].[SocieteId] de la table [dbo].[Chantier] doit être ajoutée mais la colonne ne comporte pas de valeur par défaut et n'autorise pas les valeurs NULL. Si la table contient des données, le script ALTER ne fonctionnera pas. Pour éviter ce problème, vous devez ajouter une valeur par défaut à la colonne, la marquer comme autorisant les valeurs Null ou activer la génération de smart-defaults en tant qu'option de déploiement.
+La colonne HeuresProd de la table [dbo].[JournalDesTravaux] doit être modifiée de NULL à NOT NULL. Si la table contient des données, le script ALTER peut ne pas fonctionner. Pour éviter ce problème, vous devez ajouter des valeurs à cette colonne pour toutes les lignes, marquer la colonne comme autorisant les valeurs NULL ou activer la génération de smart-defaults en tant qu'option de déploiement.
+La colonne [dbo].[Personnel].[SocieteId] de la table [dbo].[Personnel] doit être ajoutée mais la colonne ne comporte pas de valeur par défaut et n'autorise pas les valeurs NULL. Si la table contient des données, le script ALTER ne fonctionnera pas. Pour éviter ce problème, vous devez ajouter une valeur par défaut à la colonne, la marquer comme autorisant les valeurs Null ou activer la génération de smart-defaults en tant qu'option de déploiement.
+La colonne Qualification de la table [dbo].[Personnel] doit être modifiée de NULL à NOT NULL. Si la table contient des données, le script ALTER peut ne pas fonctionner. Pour éviter ce problème, vous devez ajouter des valeurs à cette colonne pour toutes les lignes, marquer la colonne comme autorisant les valeurs NULL ou activer la génération de smart-defaults en tant qu'option de déploiement.
+La colonne [dbo].[Poste].[ChantierId] de la table [dbo].[Poste] doit être ajoutée mais la colonne ne comporte pas de valeur par défaut et n'autorise pas les valeurs NULL. Si la table contient des données, le script ALTER ne fonctionnera pas. Pour éviter ce problème, vous devez ajouter une valeur par défaut à la colonne, la marquer comme autorisant les valeurs Null ou activer la génération de smart-defaults en tant qu'option de déploiement.
+La colonne [dbo].[Utilisateur].[PersonnelId] de la table [dbo].[Utilisateur] doit être ajoutée mais la colonne ne comporte pas de valeur par défaut et n'autorise pas les valeurs NULL. Si la table contient des données, le script ALTER ne fonctionnera pas. Pour éviter ce problème, vous devez ajouter une valeur par défaut à la colonne, la marquer comme autorisant les valeurs Null ou activer la génération de smart-defaults en tant qu'option de déploiement.
+Les bases de données du projet et cible ont des paramètres de classement différents. Des erreurs de déploiement peuvent se produire.
+
